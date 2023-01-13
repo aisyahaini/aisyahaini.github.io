@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+	font-family: 'montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	background-color: #ffffff;
+}
+
+/* scrollbar */
+html::-webkit-scrollbar {
+	width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+	background: rgb(33, 37, 41);
+}
+
+html::-webkit-scrollbar-thumb {
+	background: orange;
+}
+
+/* Navbar */
+.navbar a{
+	font-size: 18px;
+}
+
+.navbar li a:hover{
+    color: orange;
+}
+
+/* about */
+.content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ 
+ .content .image{
+    margin-top: 60px;
+    margin-left: 90px;
+    flex:1 1 41rem;
+ }
+ 
+ .content .image img{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    width: 60%;
+    border-radius: 10px 10px 10px 10px;
+ }
+ 
+ .content .text{
+    flex:1 1 41rem;
+    padding:3rem;
+    background: var(--light-bg);
+ }
+ 
+ .content .text h2{
+    font-size: 3rem;
+    color:var(--black);
+ }
+
+ .content .text p{
+    font-size: 1.1rem;
+    padding:1rem 0;
+    line-height: 2;
+    color:var(--black);
+ }
+
+/* Footer */
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: auto;
+    font-family: "Open Sans";
+    padding-top: 20px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    line-height: 0rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: orangered;
+}
+
+.footer-bottom{
+    background: #000;
+    width: auto;
+    padding: 8px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 0px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
